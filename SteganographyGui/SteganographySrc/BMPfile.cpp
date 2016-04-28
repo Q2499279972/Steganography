@@ -169,7 +169,7 @@ bool BMPFile::writePixelBitsToBuffer(unsigned int pixelIndex, unsigned int value
 bool BMPFile::saveBufferToFile(char *filename)
 {
 	if(filebuffer==NULL) return false;
-	FILE *wfile=fopen(filename,"w+");
+	FILE *wfile=fopen(filename,"wb+");
 	if(wfile==NULL) 
 	{
 		return false;
